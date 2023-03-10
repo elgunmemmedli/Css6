@@ -1,0 +1,131 @@
+/* body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} */
+
+body{
+    overflow: hidden;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: relative;
+    left: 50%;
+    top: 0;
+    overflow: hidden;
+    animation-name: box;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    /* right: -400px;
+    animation-name: box;
+    animation-duration: 2s; */
+    /* animation-fill-mode: forwards; */
+    /* transform: matrix(1, -0.3, 0, 1, 0, 0); */
+  /* transform: skewY(95deg); */
+    /* transform: rotate(45deg); */
+    /* transform: translate(100px, 300px); */
+    /* transform: translateY(); */
+    /* transition: all 1s; */
+    /* overflow: hidden; */
+    /* transition-delay: 1s; */
+    /* transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
+    /* transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955); */
+}
+
+
+@keyframes box {
+   0%{
+    background-color: red;
+    left: 70%;
+    top: 0;
+   }
+
+   25%{
+    background-color: yellow;
+    left: 70%;
+    bottom: 100px;
+    transform: scale(2,2);
+   }
+
+   50%{
+    background-color: blue;
+    left:50%;
+    bottom: 200px;
+    
+   }
+   75%{
+    background-color: blanchedalmond;
+    transform: rotate(360deg);
+   }
+   100%{
+    background-color: gray;
+    left:50%;
+    bottom: 200px;
+   
+   }
+}
+
+.box h1{
+    position: absolute;
+    left: -200px;
+    animation-name: text;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+@keyframes text {
+    from{
+        left: -200px;
+        transform: rotate(0);
+    }
+    to{
+        left: 50px;
+        transform: rotate(360deg);
+    }
+}
+
+.box h2{
+    position: absolute;
+    right: -200px;
+    animation-name: text2;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+
+@keyframes text2 {
+    from{
+        right: -200px;
+    }
+    to{
+        right: 50px;
+    }
+}
+
+
+
+
+/* .box img{
+    transition: all 1s;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+} */
+
+.box:hover{
+    /* transform: perspective(400px) scaleZ(1.4) rotateY(45deg); */
+    /* transform: scale(1.4,1.4); */
+    /* transform: rotate(360deg); */
+    /* width: 400px;
+    height: 400px;
+    background-color: yellow; */
+}

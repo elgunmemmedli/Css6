@@ -1,0 +1,54 @@
+/* @media print{
+    h1{
+        color: red;
+    }
+
+    p{
+        color: yellow;
+    }
+} */
+
+
+
+
+/* @media (min-width:576px){
+    h1{
+        color: red;
+    }
+}
+
+@media (min-width:768px){
+    h1{
+        color: yellow;
+    }
+}
+
+@media (min-width:992px){
+    h1{
+        color: yellow;
+    }
+} */
+
+/* @media (min-width:576px) and (orientation:landscape){
+    h1{
+        color: red;
+    }
+} */
+
+
+/* @media (min-width:576px) and (max-width:800px){
+    h1{
+        color: red;
+    }
+} */
+
+
+/* p{
+    width: 500px;
+}
+
+@media (max-width:576px){
+    p{
+        width: 100%;
+    }
+} */
